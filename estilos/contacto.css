@@ -1,0 +1,144 @@
+.formulario-contacto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.seccion-formulario {
+  width: 90%;
+  margin-top: 30px;
+  border-radius: var(--border-round);
+  border: var(--button-focus-border);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  align-items: flex-start;
+}
+
+.titulo-formulario {
+  color: var(--primary-color);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-important);
+}
+
+.titulo-seccion {
+  background-color: var(--secondary-color);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-relevant);
+  border-radius: var(--border-round);
+  color: var(--primary-color);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+}
+
+.titulo-input {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-normal);
+  margin-top: 10px;
+}
+
+.campo {
+  width: 100%;
+  height: var(--campo-height);
+  font-size: var(--font-size-small);
+}
+
+.campo:focus {
+  outline: none;
+  border: var(--campo-focus-border);
+}
+
+.campo.menu {
+  height: var(--campo-menu-height);
+}
+
+.titulo-input .obligatorio {
+  font-weight: var(--font-relevant);
+}
+
+.form-type-doc {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.grupo-radio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.campo.radio {
+  width: var(--radio-size);
+  height: var(--radio-size);
+  margin-right: 10px;
+}
+
+.pie-formulario {
+  width: 90%;
+}
+
+.permisos-formulario {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.campo.checkbox {
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  margin-right: 10px;
+}
+
+.boton-formulario {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+.btn {
+  width: var(--button-width);
+  height: var(--button-height);
+  margin: 0px 10px;
+  background: transparent;
+  border-radius: var(--border-round);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-normal);
+}
+
+.btn.primario {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.btn:focus {
+  outline: none;
+  border: var(--button-focus-border);
+}
+
+.btn.primario:focus {
+  outline: none;
+  border: var(--button-focus-primary);
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.author-name {
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .titulo-formulario {
+    font-size: var(--font-size-big);
+  }
+}
