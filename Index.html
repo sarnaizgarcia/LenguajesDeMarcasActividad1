@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Este header es muy similar que utilizaremos en los demás ficheros html -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Enlaces a las hojas de estilo -->
+  <link rel="stylesheet" href="estilos/main.css">
+  <link rel="stylesheet" href="estilos/header.css">
+  <link rel="stylesheet" href="estilos/home.css">
+  <link rel="stylesheet" href="estilos/footer.css">
+  <!-- Importación de iconos y tipo de fuente desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Home</title>
+</head>
+<body>
+  <!-- Hemos utilizado dos headers en todos los ficheros html: 
+    uno para la versión móvil y otro para el resto -->
+  <header class="header mobile">
+    <!-- Para móvil, hemos incluido el navbar dentro del header -->
+    <span class="header-title">
+      Catering
+    </span>
+    <!-- En la versión móvil, hemos hecho un menú desplegable -->
+    <nav class="nav-menu mobile">
+      <!-- Hemos añadido el atributo tabindex para hacer el menú navegable por teclado -->
+      <span class="material-icons menu-icon" tabindex="0">menu</span>
+      <!-- En esta parte introducimos el menú desplegable con listas 
+      cumpliendo el requerimiento 2 -->
+      <ul class="menu-options">
+        <li class="option">
+          <a href="index.html" class="option-link">
+            <!-- ???? -->
+            <span class="material-icons">home</span>&nbsp;
+            Inicio
+          </a>
+        </li>
+        <li class="option">
+          <a href="whoarewe.html" class="option-link">
+            <span class="material-icons">groups</span>&nbsp;
+            ¿Quienes somos?
+          </a>
+        </li>
+        <li class="option last">
+          <a href="contact.html" class="option-link">
+            <span class="material-icons">contact_mail</span> &nbsp;
+            Formulario de contacto
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <header class="header desktop">
+    <!-- Para escritorio, hemos separado el header del navbar 
+    para ver claramente la diferencia con la versión móvil -->
+    <div class="header-title">
+      Catering
+    </div>
+  </header>
+  <!-- Hemos creado un navbar con el menú hecho con las listas -->
+  <nav class="nav-menu desktop">
+    <ul class="desktop-options">
+      <li class="desktop-option">
+        <a href="index.html" class="option-link-desktop">
+          <span class="material-icons">home</span>&nbsp;
+          Inicio
+        </a>
+      </li>
+      <li class="desktop-option">
+        <a href="whoarewe.html" class="option-link-desktop">
+          <span class="material-icons">groups</span>&nbsp;
+          ¿Quienes somos?
+        </a>
+      </li>
+      <li class="desktop-option">
+        <a href="contact.html" class="option-link-desktop">
+          <span class="material-icons">contact_mail</span> &nbsp;
+          Formulario de contacto
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-body">
+    <!-- Este section corresponde al texto principal de la página de inicio -->
+    <section class="presentation text-presentation">
+      <!-- En una etiqueta section hemos incluido header, article y footer -->
+      <img src="assets/main-image.jpeg" class="main-image">
+      <header class="presentation-header">Para paladares inconformistas</header>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor tortor, feugiat ac congue eu, efficitur viverra erat. Suspendisse at libero in magna tincidunt elementum eu ac mauris. Mauris nec interdum est. Suspendisse mollis eros eget sem hendrerit congue. Mauris eu mattis augue, nec maximus metus. Quisque sagittis neque non leo faucibus sodales. Aliquam volutpat nulla leo, id tempus neque imperdiet tristique. Integer molestie, leo quis luctus viverra, tellus massa sagittis neque, sed venenatis orci augue nec urna. Nulla sit amet velit sit amet ante aliquet porta a ac erat. Cras scelerisque mi vitae turpis maximus, sit amet aliquet lorem venenatis.
+        </p>
+        <p>
+          Duis volutpat sollicitudin libero, nec vehicula odio pharetra at. Maecenas est enim, mattis et aliquam nec, congue ut tortor. Pellentesque neque lectus, faucibus at consequat sed, gravida sit amet lectus. Cras consectetur varius nisl vitae consectetur. Nullam ut aliquam felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus varius vestibulum odio. In et sapien ex. Vestibulum sit amet posuere nibh. Maecenas cursus erat et velit condimentum consectetur id vel urna. Nullam in turpis in tellus tincidunt pellentesque feugiat ac ipsum. Ut sem nulla, ullamcorper a quam eget, pharetra consequat eros. Pellentesque et ex eget enim ornare rutrum nec non dui.
+        </p>
+        <p>
+          Donec lacinia maximus lectus mattis ullamcorper. Vivamus cursus nisl vel iaculis lacinia. Nam quis rutrum leo. Fusce vel ligula id metus iaculis imperdiet. In vel sapien nec nunc tincidunt fringilla. Mauris ut dolor vitae augue euismod porttitor. Aenean facilisis imperdiet rutrum. Cras quis enim lacus. Aliquam erat volutpat. Nam egestas ante et viverra vestibulum. Suspendisse sed odio vel est molestie placerat sit amet ut diam. In tempor leo mauris, ac facilisis est tempor eu. Aliquam elementum, mi vel commodo iaculis, felis velit semper purus, in ultrices augue nibh non ipsum.
+        </p>
+      </article>
+      <footer class="contact-footer">
+        Para más información, ponte en contacto con nosotros <a href="contact.html" class="contact-link">aquí.</a>
+      </footer>
+    </section>
+    <div class="articles-section">
+      <!-- En este div, incluimos una bloque aside, en el que hemos colocado diferentes artículos sobre nuestra empresa.
+      Cada artículo, tiene una imagen y un bloque de texto div, con un h4 y un span -->
+      <h2>Articles</h2>
+      <aside class="articles">
+        <div class="article-card">
+          <div class="article-photo">
+            <img src="assets/article-image.jpeg" class="article-image">
+          </div>
+          <div class="article-resume">
+            <h4 class="article-title">Titulo</h4>
+            <span class="article-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor tortor, feugiat ac congue eu, efficitur viverra erat. Suspendisse at libero in magna tincidunt elementum eu ac mauris. Mauris nec interdum est. Suspendisse mollis eros eget sem hendrerit congue. Mauris eu mattis augue, nec maximus metus. Quisque sagittis neque non leo faucibus sodales. Aliquam volutpat nulla leo, id tempus neque imperdiet tristique. Integer molestie, leo quis luctus viverra, tellus massa sagittis neque, sed venenatis orci augue nec urna. Nulla sit amet velit sit amet ante aliquet porta a ac erat. Cras scelerisque mi vitae turpis maximus, sit amet aliquet lorem venenatis.
+            </span>
+          </div>
+        </div>
+        <div class="article-card">
+          <div class="article-photo">
+            <img src="assets/article-image.jpeg" class="article-photo">
+          </div>
+          <div class="article-resume">
+            <h4 class="article-title">Titulo</h4>
+            <span class="article-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor tortor, feugiat ac congue eu, efficitur viverra erat. Suspendisse at libero in magna tincidunt elementum eu ac mauris. Mauris nec interdum est. Suspendisse mollis eros eget sem hendrerit congue. Mauris eu mattis augue, nec maximus metus. Quisque sagittis neque non leo faucibus sodales. Aliquam volutpat nulla leo, id tempus neque imperdiet tristique. Integer molestie, leo quis luctus viverra, tellus massa sagittis neque, sed venenatis orci augue nec urna. Nulla sit amet velit sit amet ante aliquet porta a ac erat. Cras scelerisque mi vitae turpis maximus, sit amet aliquet lorem venenatis.
+            </span>
+          </div>
+        </div>
+        <div class="article-card">
+          <div class="article-photo">
+            <img src="assets/article-image.jpeg" class="article-photo">
+          </div>
+          <div class="article-resume">
+            <h4 class="article-title">Titulo</h4>
+            <span class="article-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor tortor, feugiat ac congue eu, efficitur viverra erat. Suspendisse at libero in magna tincidunt elementum eu ac mauris. Mauris nec interdum est. Suspendisse mollis eros eget sem hendrerit congue. Mauris eu mattis augue, nec maximus metus. Quisque sagittis neque non leo faucibus sodales. Aliquam volutpat nulla leo, id tempus neque imperdiet tristique. Integer molestie, leo quis luctus viverra, tellus massa sagittis neque, sed venenatis orci augue nec urna. Nulla sit amet velit sit amet ante aliquet porta a ac erat. Cras scelerisque mi vitae turpis maximus, sit amet aliquet lorem venenatis.
+            </span>
+          </div>
+        </div>
+        <div class="article-card">
+          <div class="article-photo">
+            <img src="assets/article-image.jpeg" class="article-photo">
+          </div>
+          <div class="article-resume">
+            <h4 class="article-title">Titulo</h4>
+            <span class="article-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor tortor, feugiat ac congue eu, efficitur viverra erat. Suspendisse at libero in magna tincidunt elementum eu ac mauris. Mauris nec interdum est. Suspendisse mollis eros eget sem hendrerit congue. Mauris eu mattis augue, nec maximus metus. Quisque sagittis neque non leo faucibus sodales. Aliquam volutpat nulla leo, id tempus neque imperdiet tristique. Integer molestie, leo quis luctus viverra, tellus massa sagittis neque, sed venenatis orci augue nec urna. Nulla sit amet velit sit amet ante aliquet porta a ac erat. Cras scelerisque mi vitae turpis maximus, sit amet aliquet lorem venenatis.
+            </span>
+          </div>
+        </div>
+        <div class="article-card">
+          <div class="article-photo">
+            <img src="assets/article-image.jpeg" class="article-photo">
+          </div>
+          <div class="article-resume">
+            <h4 class="article-title">Titulo</h4>
+            <span class="article-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor tortor, feugiat ac congue eu, efficitur viverra erat. Suspendisse at libero in magna tincidunt elementum eu ac mauris. Mauris nec interdum est. Suspendisse mollis eros eget sem hendrerit congue. Mauris eu mattis augue, nec maximus metus. Quisque sagittis neque non leo faucibus sodales. Aliquam volutpat nulla leo, id tempus neque imperdiet tristique. Integer molestie, leo quis luctus viverra, tellus massa sagittis neque, sed venenatis orci augue nec urna. Nulla sit amet velit sit amet ante aliquet porta a ac erat. Cras scelerisque mi vitae turpis maximus, sit amet aliquet lorem venenatis.
+            </span>
+          </div>
+        </div>
+        <div class="article-card">
+          <div class="article-photo">
+            <img src="assets/article-image.jpeg" class="article-photo">
+          </div>
+          <div class="article-resume">
+            <h4 class="article-title">Titulo</h4>
+            <span class="article-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor tortor, feugiat ac congue eu, efficitur viverra erat. Suspendisse at libero in magna tincidunt elementum eu ac mauris. Mauris nec interdum est. Suspendisse mollis eros eget sem hendrerit congue. Mauris eu mattis augue, nec maximus metus. Quisque sagittis neque non leo faucibus sodales. Aliquam volutpat nulla leo, id tempus neque imperdiet tristique. Integer molestie, leo quis luctus viverra, tellus massa sagittis neque, sed venenatis orci augue nec urna. Nulla sit amet velit sit amet ante aliquet porta a ac erat. Cras scelerisque mi vitae turpis maximus, sit amet aliquet lorem venenatis.
+            </span>
+          </div>
+        </div>
+        <div class="article-card">
+          <div class="article-photo">
+            <img src="assets/article-image.jpeg" class="article-photo">
+          </div>
+          <div class="article-resume">
+            <h4 class="article-title">Titulo</h4>
+            <span class="article-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor tortor, feugiat ac congue eu, efficitur viverra erat. Suspendisse at libero in magna tincidunt elementum eu ac mauris. Mauris nec interdum est. Suspendisse mollis eros eget sem hendrerit congue. Mauris eu mattis augue, nec maximus metus. Quisque sagittis neque non leo faucibus sodales. Aliquam volutpat nulla leo, id tempus neque imperdiet tristique. Integer molestie, leo quis luctus viverra, tellus massa sagittis neque, sed venenatis orci augue nec urna. Nulla sit amet velit sit amet ante aliquet porta a ac erat. Cras scelerisque mi vitae turpis maximus, sit amet aliquet lorem venenatis.
+            </span>
+          </div>
+        </div>
+        <div class="article-card">
+          <div class="article-photo">
+            <img src="assets/article-image.jpeg" class="article-photo">
+          </div>
+          <div class="article-resume">
+            <h4 class="article-title">Titulo</h4>
+            <span class="article-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor tortor, feugiat ac congue eu, efficitur viverra erat. Suspendisse at libero in magna tincidunt elementum eu ac mauris. Mauris nec interdum est. Suspendisse mollis eros eget sem hendrerit congue. Mauris eu mattis augue, nec maximus metus. Quisque sagittis neque non leo faucibus sodales. Aliquam volutpat nulla leo, id tempus neque imperdiet tristique. Integer molestie, leo quis luctus viverra, tellus massa sagittis neque, sed venenatis orci augue nec urna. Nulla sit amet velit sit amet ante aliquet porta a ac erat. Cras scelerisque mi vitae turpis maximus, sit amet aliquet lorem venenatis.
+            </span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <!-- En el footer incluimos información sobre nosostros que aparece en todos los ficheros html -->
+  <footer class="footer">
+    <div class="author-card">
+      <!-- La información de cada miembro del equipo esta estructurada con un h4 y una lista de dos elementos -->
+      <div class="author-name">
+        <h4>Mery Sagra</h4>
+      </div>
+      <div class="author-contact">
+        <ul class="list-contacts">
+          <li class="contact-info"><img class="contact-icon twitter" src="assets/twitter.png">@blablabla</li>
+          <li class="contact-info"><img class="contact-icon linkedin" src="assets/llinkedin.png">blablabla</li>
+        </ul>
+      </div>
+    </div>
+    <div class="author-card">
+      <div class="author-name">
+        <h4>Jose Antonio Guardiola</h4>
+      </div>
+      <div class="author-contact">
+        <ul class="list-contacts">
+          <li class="contact-info"><img class="contact-icon twitter" src="assets/twitter.png">@blablabla</li>
+          <li class="contact-info"><img class="contact-icon linkedin" src="assets/llinkedin.png">blablabla</li>
+        </ul>
+      </div>
+    </div>
+    <div class="author-card">
+      <div class="author-name">
+        <h4>Silvia Arnáiz García</h4>
+      </div>
+      <div class="author-contact">
+        <ul class="list-contacts">
+          <li class="contact-info"><img class="contact-icon twitter" src="assets/twitter.png">@blablabla</li>
+          <li class="contact-info"><img class="contact-icon linkedin" src="assets/llinkedin.png">blablabla</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+<!-- Introducimos el script de despliegue del menú para la versión móvil -->
+<script src="scripts/header.js"></script>
+</html>
