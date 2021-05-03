@@ -133,6 +133,10 @@
   transform: scale(1.1);
 }
 
+.author-name {
+  text-align: center;
+}
+
 @media (min-width: 800px) {
   .titulo-formulario {
     font-size: var(--font-size-big);
