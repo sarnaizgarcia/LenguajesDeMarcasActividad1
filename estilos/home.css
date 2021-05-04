@@ -1,3 +1,4 @@
+<!-- En esta hoja se determina el estilo de la página principal -->
 .main-body {
   display: flex;
   flex-direction: column;
@@ -86,7 +87,7 @@
 .author-name {
   text-align: center;
 }
-
+<!-- Ajuste de la página a los dispositivos -->
 @media (min-width: 900px) {
   .main-body {
     flex-direction: row;
