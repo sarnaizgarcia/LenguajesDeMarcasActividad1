@@ -1,4 +1,4 @@
-<!-- Estilo del pie de página -->
+<!-- Estilo particular del pie de página -->
 .footer {
   width: 100;
   background-color: black;
@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
 }
-<!-- Estilo del listado de contactos -->
+
 .contact-info {
   list-style: none;
   display: flex;
@@ -16,11 +16,11 @@
   align-items: center;
   margin-bottom: 10px;
 }
-<!-- Tamaño del icono de twitter -->
+
 .twitter {
   width: 40px;
 }
-<!-- Tamaño del icono de linkedin -->
+
 .linkedin {
   width: 30px;
 }
