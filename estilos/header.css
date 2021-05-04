@@ -1,3 +1,4 @@
+<!-- Estilo del header -->
 .header {
   display: flex;
   justify-content: space-between;
@@ -13,7 +14,7 @@
   color: var(--secondary-color);
   margin-left: 10px;
 }
-
+<!-- A partir de aquí se determina el estilo que tendrá el menú desplegable de navegación -->
 .material-icons.menu-icon {
   margin-right: 10px;
   font-size: var(--font-size-huge);
@@ -136,7 +137,7 @@
   outline: none;
   box-shadow: var(--menu-focus-secondary);
 }
-
+<!-- Ajuste del header a los diferentes dispositivos -->
 @media(min-width: 900px) {
   .header.desktop {
     display: flex;
