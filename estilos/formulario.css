@@ -1,3 +1,4 @@
+<!-- Estilo principal del formulario de contacto -->
 .formulario-contacto {
   width: 100%;
   display: flex;
@@ -5,7 +6,7 @@
   align-items: center;
   flex-direction: column;
 }
-
+<!-- Estilo de cada sección del formulario -->
 .seccion-formulario {
   width: 90%;
   margin-top: 30px;
@@ -17,13 +18,13 @@
   padding: 15px;
   align-items: flex-start;
 }
-
+<!-- Estilo del título del formulario -->
 .titulo-formulario {
   color: var(--primary-color);
   font-size: var(--font-size-normal);
   font-weight: var(--font-important);
 }
-
+<!--A partir de aquí se determina el estilo tanto del texto de entrada como de las diferentes formas de formulario -->
 .titulo-seccion {
   background-color: var(--secondary-color);
   font-size: var(--font-size-small);
@@ -35,7 +36,7 @@
   align-items: center;
   padding: 10px 5px;
 }
-
+<!-- Estilo del texto entrante -->
 .titulo-input {
   font-size: var(--font-size-small);
   font-weight: var(--font-normal);
@@ -132,7 +133,7 @@
 .btn:hover {
   transform: scale(1.1);
 }
-
+<!-- Ajuste del formulario a los dispositivos -->
 @media (min-width: 800px) {
   .titulo-formulario {
     font-size: var(--font-size-big);
