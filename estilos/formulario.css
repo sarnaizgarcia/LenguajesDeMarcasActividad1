@@ -1,4 +1,4 @@
-<!-- Estilo principal del formulario de contacto -->
+<!-- Estilo particular del formulario de contacto -->
 .formulario-contacto {
   width: 100%;
   display: flex;
@@ -6,7 +6,7 @@
   align-items: center;
   flex-direction: column;
 }
-<!-- Estilo de cada sección del formulario -->
+
 .seccion-formulario {
   width: 90%;
   margin-top: 30px;
@@ -18,7 +18,7 @@
   padding: 15px;
   align-items: flex-start;
 }
-<!-- Estilo del título del formulario -->
+
 .titulo-formulario {
   color: var(--primary-color);
   font-size: var(--font-size-normal);
